@@ -1,0 +1,227 @@
+{
+  "mode": "quick",
+  "n_seeds": 2,
+  "n_episodes": 220,
+  "n_eval": 80,
+  "seeds": [
+    0,
+    1
+  ],
+  "dataset": {
+    "source": "MSNBC.com Anonymous Web Data (UCI Machine Learning Repository / KDD Archive), 28 Sep 1999",
+    "is_fallback": false,
+    "n_raw": 989818,
+    "n_used": 6000,
+    "n_train": 4200,
+    "n_val": 900,
+    "n_test": 900,
+    "split": "Session-level shuffle (seed=42), 70/15/15 train/val/test. Transition matrix estimated on TRAIN sessions only. The true next request is never written into the observation.",
+    "length_mean": 7.107,
+    "dataset_sha256": "d0ad0edf726fe265f956b43d2d02bf07b58b5c27df3fdbc7b02b7195061374a2",
+    "note": "MSNBC records section-level page requests, not raw URLs or byte sizes. Payload sizes, bandwidth, RTT and cache capacity are simulated and labelled as such."
+  },
+  "moderate_overall": {
+    "Always Prefetch": {
+      "avg_latency_ms": {
+        "mean": 732.5279174856564,
+        "std": 9.926286647487522
+      },
+      "median_latency_ms": {
+        "mean": 604.6322593639846,
+        "std": 13.965545961656007
+      },
+      "p95_latency_ms": {
+        "mean": 1495.6514231453941,
+        "std": 2.562279137262796
+      },
+      "latency_reduction_pct": {
+        "mean": 57.50713282173945,
+        "std": 0.7411867713070588
+      },
+      "prefetch_hit_rate": {
+        "mean": 0.6076923076923076,
+        "std": 0.0
+      },
+      "unnecessary_prefetch_rate": {
+        "mean": 0.3923076923076923,
+        "std": 0.0
+      },
+      "bandwidth_mb": {
+        "mean": 13.12744140625,
+        "std": 0.020716018980074635
+      },
+      "cache_util": {
+        "mean": 0.2510541298217531,
+        "std": 0.003270160357785701
+      },
+      "avg_reward": {
+        "mean": -10.069881885131426,
+        "std": 0.032560551301952845
+      },
+      "prefetch_actions": {
+        "mean": 6.5,
+        "std": 0.0
+      },
+      "cache_hit_rate": {
+        "mean": 0.4970353578487664,
+        "std": 0.016123112564183428
+      }
+    },
+    "DQN": {
+      "avg_latency_ms": {
+        "mean": 734.5782383900514,
+        "std": 12.825878277699914
+      },
+      "median_latency_ms": {
+        "mean": 610.3597629790532,
+        "std": 22.06545925262695
+      },
+      "p95_latency_ms": {
+        "mean": 1496.6368334540416,
+        "std": 1.1686985142711002
+      },
+      "latency_reduction_pct": {
+        "mean": 57.38787251808036,
+        "std": 0.9098463101944869
+      },
+      "prefetch_hit_rate": {
+        "mean": 0.6404954067021238,
+        "std": 0.019443880446210243
+      },
+      "unnecessary_prefetch_rate": {
+        "mean": 0.3698565601715823,
+        "std": 0.0048039884961781475
+      },
+      "bandwidth_mb": {
+        "mean": 13.0426025390625,
+        "std": 0.09926425761285762
+      },
+      "cache_util": {
+        "mean": 0.24973376653560808,
+        "std": 0.0014028846912598736
+      },
+      "avg_reward": {
+        "mean": -9.95030549928008,
+        "std": 0.07823768947683185
+      },
+      "prefetch_actions": {
+        "mean": 6.15,
+        "std": 0.15909902576697357
+      },
+      "cache_hit_rate": {
+        "mean": 0.4959936911820998,
+        "std": 0.017596251691655355
+      }
+    },
+    "No Prefetch": {
+      "avg_latency_ms": {
+        "mean": 1723.9429429831935,
+        "std": 6.710185920907401
+      },
+      "median_latency_ms": {
+        "mean": 1717.939038483592,
+        "std": 3.0415442817225
+      },
+      "p95_latency_ms": {
+        "mean": 2028.8761575333638,
+        "std": 3.7510728975148533
+      },
+      "latency_reduction_pct": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "prefetch_hit_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "unnecessary_prefetch_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bandwidth_mb": {
+        "mean": 10.37109375,
+        "std": 0.0
+      },
+      "cache_util": {
+        "mean": 0.3293548020830799,
+        "std": 0.0
+      },
+      "avg_reward": {
+        "mean": -15.707210057707936,
+        "std": 0.056010940585712835
+      },
+      "prefetch_actions": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "cache_hit_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "Rule-Based": {
+      "avg_latency_ms": {
+        "mean": 799.1501419357342,
+        "std": 4.895474459076947
+      },
+      "median_latency_ms": {
+        "mean": 701.1785915566209,
+        "std": 18.885284073007764
+      },
+      "p95_latency_ms": {
+        "mean": 1508.368305325413,
+        "std": 1.3825468428439942
+      },
+      "latency_reduction_pct": {
+        "mean": 53.64314541480795,
+        "std": 0.46440664532515413
+      },
+      "prefetch_hit_rate": {
+        "mean": 0.7200106968215159,
+        "std": 0.0017828945430284622
+      },
+      "unnecessary_prefetch_rate": {
+        "mean": 0.3248513024261802,
+        "std": 0.0004696202409375486
+      },
+      "bandwidth_mb": {
+        "mean": 12.62939453125,
+        "std": 0.04143203796014927
+      },
+      "cache_util": {
+        "mean": 0.2496489649612927,
+        "std": 0.002008875832704194
+      },
+      "avg_reward": {
+        "mean": -10.00088213743633,
+        "std": 0.006859807417831434
+      },
+      "prefetch_actions": {
+        "mean": 5.15625,
+        "std": 0.06187184335382316
+      },
+      "cache_hit_rate": {
+        "mean": 0.4813117230477827,
+        "std": 0.008862766737522858
+      }
+    }
+  },
+  "scenarios": [
+    "fast",
+    "moderate",
+    "slow",
+    "high_latency",
+    "variable",
+    "limited_cache",
+    "low_predictability"
+  ],
+  "methods": [
+    "No Prefetch",
+    "Always Prefetch",
+    "Rule-Based",
+    "DQN"
+  ],
+  "primary_checkpoint": "models/dqn_prefetch.pt",
+  "runtime_s": 33.82355070114136,
+  "honest_reading": "Results are produced by train_evaluate.py. If DQN does not dominate every metric, that is reported rather than adjusted. The intended lesson is the latency\u2013bandwidth tradeoff, not a guaranteed ranking."
+}
